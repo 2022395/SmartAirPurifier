@@ -38,6 +38,12 @@ public class SmartAirPurifier {
                 break;
                 
             }
+             case 3:{
+                 Settings settings= new Settings();
+                 settings.ScreenSettings();
+                 settings.Update();
+             
+             }
             
             
         
@@ -45,19 +51,20 @@ public class SmartAirPurifier {
         }
     
         
-        
-        
     }
     public static int menuSelection(){
         System.out.println("Welcome To The SmartAirPurifier Main Menu");
         System.out.println("Please make a Selection from this menu");
         System.out.println("1: AirPurifier");
         System.out.println("2: AirCondition System");
+        System.out.println("3: Settings");
         Scanner scanner=new Scanner(System.in);
      
         String selection = scanner.nextLine();
         return Integer.parseInt(selection);
         
     }
+    
+    
 
 }
